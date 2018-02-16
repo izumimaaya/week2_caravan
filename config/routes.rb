@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
- get 'blogs/index'=>'blogs#index'
+ get 'blogs/'=>'blogs#index'
+
+ get 'blogs/new'=>'blogs#new'
+
+ post 'blogs'=>'blogs#create'
 end
+
+
+get '/blogs/:id'=> blog#show'
+
+
